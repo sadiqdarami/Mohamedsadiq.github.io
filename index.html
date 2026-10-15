@@ -1,1 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الديوان الأدبي | الشاعر محمد صادق درامي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #fcfbf9;
+            --text-color: #1a1a1a;
+            --accent-color: #5c4033;
+            --secondary-text: #5a5a5a;
+            --border-color: #e6e4e0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body { 
+            font-family: 'Amiri', 'Traditional Arabic', 'Georgia', serif; 
+            line-height: 1.8; 
+            margin: 0; 
+            padding: 0 20px; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+        }
+
+        header { 
+            max-width: 800px; 
+            margin: 60px auto 40px auto; 
+            text-align: center; 
+            border-bottom: 1px solid var(--border-color); 
+            padding-bottom: 40px; 
+        }
+
+        header h1 { 
+            font-size: 2.8rem; 
+            font-weight: 400; 
+            margin-bottom: 10px; 
+        }
+
+        header p { 
+            font-style: italic; 
+            color: var(--secondary-text); 
+            font-size: 1.2rem; 
+        }
+
+        nav { 
+            margin-top: 25px; 
+            text-align: center;
+        }
+
+        nav a { 
+            color: var(--accent-color); 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-size: 1.1rem; 
+            font-weight: bold;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        nav a:hover { 
+            text-decoration: underline; 
+            color: #000;
+        }
+
+        main { 
+            max-width: 800px; 
+            margin: 0 auto 80px auto; 
+        }
+
+        .section-title { 
+            font-size: 1.4rem; 
+            color: var(--accent-color); 
+            margin: 60px 0 30px 0; 
+            border-bottom: 1px solid var(--border-color); 
+            padding-bottom: 5px; 
+        }
+
+        .poem { 
+            background: white; 
+            padding: 2.5rem; 
+            border-radius: 4px; 
+            border: 1px solid var(--border-color);
+            margin-bottom: 2.5rem; 
+            text-align: center;
+        }
+
+        .poem-title { 
+            font-size: 1.8rem; 
+            color: var(--accent-color); 
+            margin-bottom: 5px;
+        }
+
+        .poem-meta {
+            font-size: 0.95rem;
+            color: var(--secondary-text);
+            margin-bottom: 30px;
+        }
+
+        .poem-container {
+            max-width: 650px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .poem-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.35rem;
+            color: #222;
+        }
+
+        .verse {
+            flex: 1;
+            text-align: justify;
+            text-align-last: center; 
+            padding: 0 10px;
+        }
+
+        .separator {
+            color: var(--secondary-text);
+            font-size: 1rem;
+            padding: 0 15px;
+            flex-shrink: 0;
+        }
+
+        .about-text {
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+
+        .contact-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--accent-color);
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-color);
+            transition: color 0.3s ease, border-style 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: #000;
+            border-bottom-style: solid;
+        }
+
+        footer { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 40px 0; 
+            border-top: 1px solid var(--border-color); 
+            text-align: center; 
+            font-size: 0.95rem; 
+            color: var(--secondary-text); 
+        }
+
+        @media (max-width: 600px) {
+            .poem-row {
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+            .separator {
+                display: none; 
+            }
+            .verse {
+                text-align: center;
+                text-align-last: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>محمد صادق درامي</h1>
+        <p>المنصة الرسمية للمنظومات الشعرية والمقالات الأدبية</p>
+        <nav>
+            <a href="#archive">الديوان الشعري</a>
+            <a href="#about">نبذة عن الشاعر</a>
+            <a href="#contact">التواصل</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- قسم القصائد المختارة -->
+        <section id="archive">
+            <h2 class="section-title">مختارات من السلسلة الأولى</h2>
+
+            <article class="poem">
+                <h3 class="poem-title">إطلالة على البقرة (السلسلة الأولى)</h3>
+                <div class="poem-meta">الشاعر محمد صادق درامي</div>
+                
+                <div class="poem-container">
+                    <div class="poem-row">
+                        <div class="verse">اتلُ الم~ البقرة</div>
+                        <div class="separator">()</div>
+                        <div class="verse">تلاوةً مدّاً ووقفاً عطِرة</div>
+                    </div>
+                    <div class="poem-row">
+                        <div class="verse">مفتتحاً بأحرفٍ مبتدرة</div>
+                        <div class="separator">()</div>
+                        <div class="verse">لمستهل سورةٍ مستطرة</div>
+                    </div>
+                    <div class="poem-row">
+                        <div class="verse">كأنها طلاسمٌ مبشرة</div>
+                        <div class="separator">()</div>
+                        <div class="verse">أو مطلع الأنوار نحو المغفرة</div>
+                    </div>
+                    <div class="poem-row">
+                        <div class="verse">أو مبدأ علاقةٍ منتظرة</div>
+                        <div class="separator">()</div>
+                        <div class="verse">فذلك الكتاب فاقفُ أثره</div>
+                    </div>
+                    <div class="poem-row">
+                        <div class="verse">وفصّه ونصّه وعِبَره</div>
+                        <div class="separator">()</div>
+                        <div class="verse">يا سورةً قد قررت معتذرة</div>
+                    </div>
+                    <div class="poem-row">
+                        <div class="verse">أن الهدى زهرتها المنتظرة</div>
+                        <div class="separator">()</div>
+                        <div class="verse">ذاكرةً أقسامها معتبرة</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- قسم النبذة الشخصية -->
+        <section id="about">
+            <h2 class="section-title">عن الشاعر</h2>
+            <p class="about-text">
+                أهلاً بكم في الأرشيف الرقمي المخصص لحفظ وتوثيق أعمال الشاعر محمد صادق درامي. يضم هذا الموقع المنظومات الشرعية والقصائد الأدبية والمقالات السياسية والمنظومة الشهيرة "إطلالة على البقرة"، بهدف تسهيل الوصول إليها للباحثين والقراء والمهتمين بالأدب العربي في غرب أفريقيا والعالم الإسلامي.
+            </p>
+        </section>
+
+        <!-- قسم الاتصال -->
+        <section id="contact">
+            <h2 class="section-title">التواصل والاستفسارات</h2>
+            <p class="about-text">
+                للمراجعات الأدبية أو الاستفسارات المتعلقة بحقوق النشر والتوثيق، يمكنكم التواصل عبر البريد الإلكتروني المباشر:
+            </p>
+            <a href="mailto:info@example.com" class="contact-link">info@example.com</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © الشاعر محمد صادق درامي 2026</p>
+    </footer>
+
+</body>
+  </html>
 
