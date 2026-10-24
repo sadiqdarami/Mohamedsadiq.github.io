@@ -1,20 +1,220 @@
 <!doctype html>
-<html lang="ar">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>محمد صادق درامي</title>
-  <meta name="description" content="موقع محمد صادق درامي" />
-</head>
-<body>
-  <main>
-    <h1>مرحبا</h1>
-    <p>هذا هو موقعي — محتوى الموقع موجود في ملفات المستودع.</p>
-    <ul>
-      <li><a href="/%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%D9%86%D9%88%D8%B1">الصلاة نور</a></li>
-      <li><a href="/%D8%AC%D8%AF%D8%AA%D9%8A">جدتي</a></li>
-      <li><a href="/%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%82%20%D8%AF%D8%B1%D8%A7%D9%85%D9%8A">محمد صادق درامي</a></li>
-    </ul>
-  </main>
-</body>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="سيرة محمد صادق درامي ومشاريعه ومهاراته" />
+    <title>محمد صادق درامي | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">محمد صادق</div>
+        <nav class="nav-links" aria-label="التنقل">
+          <a href="#about">من أنا</a>
+          <a href="#skills">المهارات</a>
+          <a href="#projects">المشاريع</a>
+          <a href="#experience">الخبرة</a>
+          <a href="#contact">تواصل</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">مرحباً بك في موقعي الشخصي</p>
+            <h1>محمد صادق درامي</h1>
+            <h2>مطور ويب / مصمم واجهات</h2>
+            <p>
+              أعمل على بناء حلول ويب عملية وجميلة، مع اهتمام خاص بتجربة المستخدم,
+              الأداء السريع، والتنفيذ الوظيفي.
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="#projects">عرض المشاريع</a>
+              <a class="btn secondary" href="#contact">تواصل معي</a>
+            </div>
+            <ul class="socials" aria-label="روابط التواصل">
+              <li><a href="https://github.com/sadiqdarami" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="mailto:sadiqdarami@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="بطاقة شخصية">
+            <div class="profile-ring">
+              <div class="profile-photo">م</div>
+            </div>
+            <div class="stats">
+              <div>
+                <strong>+2</strong>
+                <span>سنوات خبرة</span>
+              </div>
+              <div>
+                <strong>12</strong>
+                <span>مشاريع</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>التزام</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">من أنا</p>
+            <h3>مختصر عن شخصيتي ومهنتي</h3>
+          </div>
+          <div class="about-grid">
+            <div class="about-card">
+              <p>
+                أنا محمد، أعمل في تطوير الويب وتصميم الواجهات، وأحب تحويل الأفكار
+                إلى مواقع سهلة الاستخدام، جذابة، وفعالة. أركز على كتابة كود نظيف,
+                تجربة مستخدم ممتازة، وتحسين الأداء.
+              </p>
+            </div>
+            <div class="about-card highlight">
+              <ul>
+                <li>تطوير صفحات ويب متجاوبة</li>
+                <li>تصميم واجهات جذابة وسهلة الاستخدام</li>
+                <li>حلول موجهة للأهداف العملية</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">المهارات</p>
+            <h3>ما أملك من أدوات وقدرات</h3>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-box">
+              <span>HTML</span>
+              <div class="progress"><i style="width:95%"></i></div>
+            </div>
+            <div class="skill-box">
+              <span>CSS</span>
+              <div class="progress"><i style="width:90%"></i></div>
+            </div>
+            <div class="skill-box">
+              <span>JavaScript</span>
+              <div class="progress"><i style="width:80%"></i></div>
+            </div>
+            <div class="skill-box">
+              <span>Git / GitHub</span>
+              <div class="progress"><i style="width:85%"></i></div>
+            </div>
+            <div class="skill-box">
+              <span>UI/UX</span>
+              <div class="progress"><i style="width:88%"></i></div>
+            </div>
+            <div class="skill-box">
+              <span>Responsive Design</span>
+              <div class="progress"><i style="width:92%"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">المشاريع</p>
+            <h3>أبرز الأعمال التي قمت بها</h3>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-badge">Portfolio</div>
+              <h4>الموقع الشخصي</h4>
+              <p>صفحة تعرض السيرة الذاتية، الأنشطة، والمشاريع بشكل احترافي وسهل القراءة.</p>
+              <a href="#">عرض المشروع</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-badge">Landing Page</div>
+              <h4>صفحة هبوط</h4>
+              <p>تصميم صفحة ترويجية جذابة مع أقسام رئيسية، عروض، ومقاطع دعائية. </p>
+              <a href="#">عرض المشروع</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-badge">Web App</div>
+              <h4>تطبيق ويب</h4>
+              <p>واجهة تطبيق بسيطة مبنية على تقنيات حديثة مع تصاميم متجاوبة وتجربة مستخدم ممتازة.</p>
+              <a href="#">عرض المشروع</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">الخبرة</p>
+            <h3>مسار عملي وتطوري</h3>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2024</span>
+              <div class="timeline-content">
+                <h4>مطور ويب مستقل</h4>
+                <p>تصميم وتطوير مواقع شخصية ولوحات ترويجية بمهام صغيرة ومتعددة.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="year">2023</span>
+              <div class="timeline-content">
+                <h4>مصمم واجهات</h4>
+                <p>تطوير واجهات مستخدم باستخدام HTML وCSS مع تحسين تجربة الاستخدام.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="year">2022</span>
+              <div class="timeline-content">
+                <h4>بداية المسار</h4>
+                <p>بدأت في تعلم أساسيات الويب، والانفتاح على التصميم والبرمجة.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-box">
+          <div>
+            <p class="eyebrow">تواصل</p>
+            <h3>لنبدأ مشروعًا جديدًا معًا</h3>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:sadiqdarami@gmail.com">sadiqdarami@gmail.com</a>
+            <a href="https://github.com/sadiqdarami" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 محمد صادق درامي. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+  </body>
 </html>
