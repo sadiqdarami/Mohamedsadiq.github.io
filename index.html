@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="سيرة محمد صادق درامي ومشاريعه ومهاراته" />
+    <meta name="description" content="منصة شخصية لمحمد صادق درامي - مطور ويب ومصمم واجهات" />
     <title>محمد صادق درامي | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
-        <div class="brand">محمد صادق</div>
+        <div class="brand-wrap">
+          <span class="brand-mark">م</span>
+          <span class="brand-name">محمد صادق</span>
+        </div>
         <nav class="nav-links" aria-label="التنقل">
           <a href="#about">من أنا</a>
+          <a href="#services">الخدمات</a>
           <a href="#skills">المهارات</a>
           <a href="#projects">المشاريع</a>
           <a href="#experience">الخبرة</a>
@@ -26,40 +30,43 @@
 
     <main>
       <section class="hero">
-        <div class="container hero-content">
-          <div class="hero-text">
-            <p class="eyebrow">مرحباً بك في موقعي الشخصي</p>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">مرحباً بك في موقعي الشخصي</p>
             <h1>محمد صادق درامي</h1>
-            <h2>مطور ويب / مصمم واجهات</h2>
-            <p>
-              أعمل على بناء حلول ويب عملية وجميلة، مع اهتمام خاص بتجربة المستخدم,
-              الأداء السريع، والتنفيذ الوظيفي.
+            <h2>مطور ويب • مصمم واجهات • مبتكر حلول رقمية</h2>
+            <p class="lead">
+              أساعد الشركات والأفراد على تحويل أفكارهم إلى مواقع ويب احترافية،
+              سهلة الاستخدام، وسريعة الأداء، مع تركيز كبير على تجربة المستخدم
+              والجمال البصري.
             </p>
             <div class="actions">
-              <a class="btn primary" href="#projects">عرض المشاريع</a>
-              <a class="btn secondary" href="#contact">تواصل معي</a>
+              <a class="btn btn-primary" href="#projects">مشاريعي</a>
+              <a class="btn btn-secondary" href="#contact">تواصل معي</a>
             </div>
-            <ul class="socials" aria-label="روابط التواصل">
+            <ul class="mini-links" aria-label="روابط التواصل">
               <li><a href="https://github.com/sadiqdarami" target="_blank" rel="noreferrer">GitHub</a></li>
               <li><a href="mailto:sadiqdarami@gmail.com">Email</a></li>
               <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
             </ul>
           </div>
 
-          <div class="hero-card" aria-label="بطاقة شخصية">
-            <div class="profile-ring">
-              <div class="profile-photo">م</div>
+          <div class="hero-panel">
+            <div class="profile-box">
+              <div class="avatar">م</div>
+              <div class="status-tag">متاح للتعاون</div>
             </div>
-            <div class="stats">
-              <div>
+
+            <div class="metrics">
+              <div class="metric-item">
                 <strong>+2</strong>
                 <span>سنوات خبرة</span>
               </div>
-              <div>
+              <div class="metric-item">
                 <strong>12</strong>
-                <span>مشاريع</span>
+                <span>مشاريع مكتملة</span>
               </div>
-              <div>
+              <div class="metric-item">
                 <strong>100%</strong>
                 <span>التزام</span>
               </div>
@@ -71,101 +78,157 @@
       <section id="about" class="section">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">من أنا</p>
-            <h3>مختصر عن شخصيتي ومهنتي</h3>
+            <p class="kicker">من أنا</p>
+            <h3>مصمم حلول رقمية بعقلية عملية ومهنية</h3>
           </div>
+
           <div class="about-grid">
-            <div class="about-card">
+            <article class="card">
               <p>
-                أنا محمد، أعمل في تطوير الويب وتصميم الواجهات، وأحب تحويل الأفكار
-                إلى مواقع سهلة الاستخدام، جذابة، وفعالة. أركز على كتابة كود نظيف,
-                تجربة مستخدم ممتازة، وتحسين الأداء.
+                أنا محمد صادق درامي، أعمل في تطوير الويب وتصميم الواجهات،
+                وأحب بناء تجارب رقمية متناسقة تجمع بين الجمال والوظائف.
+                أركز على التصميم الواضح، الكود النظيف، وسهولة الاستخدام من أول
+                زيارة إلى آخر تفاعل.
               </p>
-            </div>
-            <div class="about-card highlight">
+            </article>
+
+            <article class="card accent-card">
               <ul>
+                <li>تصميم واجهات احترافية</li>
                 <li>تطوير صفحات ويب متجاوبة</li>
-                <li>تصميم واجهات جذابة وسهلة الاستخدام</li>
-                <li>حلول موجهة للأهداف العملية</li>
+                <li>تحسين تجربة المستخدم</li>
+                <li>حلول عملية وسريعة التنفيذ</li>
               </ul>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section alt">
+      <section id="services" class="section section-alt">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">المهارات</p>
-            <h3>ما أملك من أدوات وقدرات</h3>
+            <p class="kicker">الخدمات</p>
+            <h3>ما أقدمه لعملائي</h3>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon">01</div>
+              <h4>تصميم المواقع</h4>
+              <p>تصاميم جذابة ومتجاوبة تعكس هوية العلامة التجارية بوضوح.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">02</div>
+              <h4>تطوير الواجهات</h4>
+              <p>تحويل التصاميم إلى صفحات ويب عملية، متناسقة، وسريعة الاستجابة.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">03</div>
+              <h4>تجربة المستخدم</h4>
+              <p>تحسين سهولة التصفح والتفاعل لزيادة رضا الزوار وتحسين الأداء.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">المهارات</p>
+            <h3>أدواتي الأساسية</h3>
           </div>
 
           <div class="skills-grid">
             <div class="skill-box">
-              <span>HTML</span>
+              <div class="skill-label-row">
+                <span>HTML5</span>
+                <span>95%</span>
+              </div>
               <div class="progress"><i style="width:95%"></i></div>
             </div>
+
             <div class="skill-box">
-              <span>CSS</span>
-              <div class="progress"><i style="width:90%"></i></div>
+              <div class="skill-label-row">
+                <span>CSS3</span>
+                <span>92%</span>
+              </div>
+              <div class="progress"><i style="width:92%"></i></div>
             </div>
+
             <div class="skill-box">
-              <span>JavaScript</span>
-              <div class="progress"><i style="width:80%"></i></div>
+              <div class="skill-label-row">
+                <span>JavaScript</span>
+                <span>82%</span>
+              </div>
+              <div class="progress"><i style="width:82%"></i></div>
             </div>
+
             <div class="skill-box">
-              <span>Git / GitHub</span>
-              <div class="progress"><i style="width:85%"></i></div>
-            </div>
-            <div class="skill-box">
-              <span>UI/UX</span>
+              <div class="skill-label-row">
+                <span>GitHub</span>
+                <span>88%</span>
+              </div>
               <div class="progress"><i style="width:88%"></i></div>
             </div>
+
             <div class="skill-box">
-              <span>Responsive Design</span>
-              <div class="progress"><i style="width:92%"></i></div>
+              <div class="skill-label-row">
+                <span>UI/UX</span>
+                <span>90%</span>
+              </div>
+              <div class="progress"><i style="width:90%"></i></div>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill-label-row">
+                <span>Responsive Design</span>
+                <span>94%</span>
+              </div>
+              <div class="progress"><i style="width:94%"></i></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section">
+      <section id="projects" class="section section-alt">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">المشاريع</p>
-            <h3>أبرز الأعمال التي قمت بها</h3>
+            <p class="kicker">المشاريع</p>
+            <h3>أعمال مختارة</h3>
           </div>
 
           <div class="projects-grid">
             <article class="project-card">
-              <div class="project-badge">Portfolio</div>
+              <span class="project-tag">Portfolio</span>
               <h4>الموقع الشخصي</h4>
-              <p>صفحة تعرض السيرة الذاتية، الأنشطة، والمشاريع بشكل احترافي وسهل القراءة.</p>
+              <p>صفحة شخصية أنيقة تعرض الخبرات، المشاريع، والمهارات بشكل احترافي ومريح للعرض.</p>
               <a href="#">عرض المشروع</a>
             </article>
 
             <article class="project-card">
-              <div class="project-badge">Landing Page</div>
+              <span class="project-tag">Landing Page</span>
               <h4>صفحة هبوط</h4>
-              <p>تصميم صفحة ترويجية جذابة مع أقسام رئيسية، عروض، ومقاطع دعائية. </p>
+              <p>تصميم صفحة ترويجية متكاملة لمنتج أو خدمة، مع تركيز على التحويل والوضوح.</p>
               <a href="#">عرض المشروع</a>
             </article>
 
             <article class="project-card">
-              <div class="project-badge">Web App</div>
-              <h4>تطبيق ويب</h4>
-              <p>واجهة تطبيق بسيطة مبنية على تقنيات حديثة مع تصاميم متجاوبة وتجربة مستخدم ممتازة.</p>
+              <span class="project-tag">Web App</span>
+              <h4>واجهة تطبيق</h4>
+              <p>واجهة مستخدم حديثة وسهلة، تناسب التطبيقات والخدمات الرقمية الحديثة.</p>
               <a href="#">عرض المشروع</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="experience" class="section alt">
+      <section id="experience" class="section">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">الخبرة</p>
-            <h3>مسار عملي وتطوري</h3>
+            <p class="kicker">الخبرة</p>
+            <h3>مسار عملي</h3>
           </div>
 
           <div class="timeline">
@@ -173,7 +236,7 @@
               <span class="year">2024</span>
               <div class="timeline-content">
                 <h4>مطور ويب مستقل</h4>
-                <p>تصميم وتطوير مواقع شخصية ولوحات ترويجية بمهام صغيرة ومتعددة.</p>
+                <p>عملت على تصميم وتطوير مواقع شخصية، صفحات هبوط، وعناصر تجربة مستخدم موجهة للأعمال.</p>
               </div>
             </div>
 
@@ -181,26 +244,26 @@
               <span class="year">2023</span>
               <div class="timeline-content">
                 <h4>مصمم واجهات</h4>
-                <p>تطوير واجهات مستخدم باستخدام HTML وCSS مع تحسين تجربة الاستخدام.</p>
+                <p>ركزت على بناء واجهات مستخدم متجاوبة وجذابة باستخدام HTML وCSS وأساسيات JavaScript.</p>
               </div>
             </div>
 
             <div class="timeline-item">
               <span class="year">2022</span>
               <div class="timeline-content">
-                <h4>بداية المسار</h4>
-                <p>بدأت في تعلم أساسيات الويب، والانفتاح على التصميم والبرمجة.</p>
+                <h4>بداية رحلتي</h4>
+                <p>بدأت بتعلم أساسيات الويب والتصميم، ثم تقدمت نحو بناء مشاريع عملية أولية.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section contact">
-        <div class="container contact-box">
+      <section id="contact" class="section cta-section">
+        <div class="container cta-box">
           <div>
-            <p class="eyebrow">تواصل</p>
-            <h3>لنبدأ مشروعًا جديدًا معًا</h3>
+            <p class="kicker">تواصل</p>
+            <h3>هل لديك فكرة مشروع تحتاج تنفيذها؟</h3>
           </div>
           <div class="contact-links">
             <a href="mailto:sadiqdarami@gmail.com">sadiqdarami@gmail.com</a>
@@ -213,7 +276,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>© 2025 محمد صادق درامي. جميع الحقوق محفوظة.</p>
+        <p>© 2025 محمد صادق درامي — جميع الحقوق محفوظة.</p>
       </div>
     </footer>
   </body>
