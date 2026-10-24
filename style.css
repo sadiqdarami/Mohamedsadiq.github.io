@@ -4,14 +4,14 @@
 
 :root {
   --bg: #120d0a;
-  --bg-soft: #1b1511;
+  --bg-soft: #1c1512;
   --panel: rgba(255,255,255,0.03);
-  --card: rgba(18, 15, 12, 0.8);
-  --text: #f5e9d7;
-  --muted: #d5c4ae;
+  --card: rgba(18, 15, 12, 0.82);
+  --text: #f6ebdb;
+  --muted: #d8c8b0;
   --primary: #d9b06d;
   --secondary: #b87b4a;
-  --gold: #f5d28c;
+  --gold: #f4d99a;
   --border: rgba(255,255,255,0.08);
   --shadow: 0 20px 45px rgba(0,0,0,0.22);
   --radius: 24px;
@@ -25,11 +25,11 @@ body {
   margin: 0;
   font-family: "Cairo", sans-serif;
   background:
-    radial-gradient(circle at top right, rgba(217,176,109,0.16), transparent 22%),
+    radial-gradient(circle at top right, rgba(217,176,109,0.14), transparent 22%),
     radial-gradient(circle at bottom left, rgba(184,123,74,0.12), transparent 25%),
-    linear-gradient(135deg, var(--bg), #1d1713 52%, #120d0a 100%);
+    linear-gradient(135deg, var(--bg), #1a1411 50%, #120d0a 100%);
   color: var(--text);
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
 a {
@@ -50,7 +50,7 @@ img {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 100;
   background: rgba(18, 13, 10, 0.7);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -61,7 +61,7 @@ img {
   align-items: center;
   justify-content: space-between;
   min-height: 76px;
-  gap: 16px;
+  gap: 18px;
 }
 
 .brand-wrap {
@@ -124,19 +124,20 @@ img {
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(2.5rem, 5vw, 4.7rem);
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  font-weight: 800;
   line-height: 1.15;
 }
 
 .hero-copy h2 {
-  margin: 16px 0 18px;
-  font-size: clamp(1.2rem, 2vw, 1.9rem);
+  margin: 14px 0 18px;
+  font-size: clamp(1.18rem, 2vw, 1.9rem);
   color: var(--muted);
   font-weight: 600;
 }
 
 .lead {
-  max-width: 630px;
+  max-width: 640px;
   margin: 0;
   color: var(--muted);
   font-size: 1.08rem;
@@ -146,7 +147,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  margin-top: 26px;
+  margin-top: 28px;
 }
 
 .btn {
@@ -215,7 +216,7 @@ img {
   display: grid;
   place-items: center;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #160f0b;
+  color: #150f0b;
   font-weight: 800;
   font-size: 4rem;
   box-shadow: 0 0 0 12px rgba(217,176,109,0.12);
@@ -277,8 +278,8 @@ img {
 }
 
 .about-grid,
-.domains-grid,
-.works-grid {
+.works-grid,
+.themes-grid {
   display: grid;
   gap: 22px;
 }
@@ -288,8 +289,8 @@ img {
 }
 
 .card,
-.domain-card,
 .work-card,
+.theme-card,
 .article-item,
 .cta-box {
   background: var(--card);
@@ -311,43 +312,13 @@ img {
   background: linear-gradient(135deg, rgba(217,176,109,0.08), rgba(184,123,74,0.06));
 }
 
-.domains-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.domain-card,
-.work-card {
-  padding: 26px 22px;
-}
-
-.icon {
-  width: 52px;
-  height: 52px;
-  display: grid;
-  place-items: center;
-  border-radius: 14px;
-  background: rgba(217,176,109,0.1);
-  color: var(--gold);
-  font-weight: 800;
-  margin-bottom: 18px;
-}
-
-.domain-card h4,
-.work-card h4,
-.article-item h4 {
-  margin: 0 0 10px;
-  font-size: 1.4rem;
-}
-
-.domain-card p,
-.work-card p,
-.article-item p {
-  margin: 0;
-  color: var(--muted);
-}
-
 .works-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.work-card,
+.theme-card {
+  padding: 26px 22px;
 }
 
 .tag {
@@ -360,6 +331,36 @@ img {
   border: 1px solid rgba(184,123,74,0.18);
   font-size: 0.72rem;
   font-weight: 700;
+}
+
+.work-card h4,
+.theme-card h4,
+.article-item h4 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+}
+
+.work-card p,
+.theme-card p,
+.article-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.themes-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(217,176,109,0.1);
+  color: var(--gold);
+  font-weight: 800;
+  margin-bottom: 18px;
 }
 
 .articles-list {
@@ -428,8 +429,8 @@ img {
 @media (max-width: 980px) {
   .hero-grid,
   .about-grid,
-  .domains-grid,
   .works-grid,
+  .themes-grid,
   .cta-box {
     grid-template-columns: 1fr;
     display: grid;
@@ -444,8 +445,8 @@ img {
 
 @media (max-width: 620px) {
   .stats,
-  .domains-grid,
   .works-grid,
+  .themes-grid,
   .about-grid {
     grid-template-columns: 1fr;
   }
